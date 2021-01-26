@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>br.com.fiserv.chargeback.test.automacao</td>
+                          <td>1</td>
+                        <td>25 jan 2021, 22:40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">CadastroUsuarioStep.ao_concluir_o_cadastor_visualiza_se_a_seguinte_mensagem(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2502207">002ms</td>
+                <td class="duration" data-value="1251103">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">CadastroUsuarioStep.ao_informar_nome_do_usuário_Sobrenome_email_login_da_rede_perfil(String,String,String,String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="26674391123">26s 674ms</td>
+                <td class="duration" data-value="13337195561">13s 337ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeletarUsuarioStep.ao_excluir_o_usuário_verifica_se_a_seguinte_mensagem(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="656202">000ms</td>
+                <td class="duration" data-value="656202">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeletarUsuarioStep.ao_informar_nome_do_usuário_realiza_a_verificação_do_mesmo_se_está_cadastrado(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="13369626235">13s 369ms</td>
+                <td class="duration" data-value="13369626235">13s 369ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditarUsuario.ao_editar_o_usuário_verifica_se_a_seguinte_mensagem(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="722632">000ms</td>
+                <td class="duration" data-value="722632">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditarUsuario.ao_informar_nome_do_usuário_ao_realizar_a_busca_pelo_usuario(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2195756023">2s 195ms</td>
+                <td class="duration" data-value="2195756023">2s 195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditarUsuario.ao_informar_os_novos_dados_usuário_Sobrenome_email_login_da_rede_perfil(String,String,String,String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="12291806661">12s 291ms</td>
+                <td class="duration" data-value="12291806661">12s 291ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.tearDown(Scenario)</td>
+                <td>6</td>
+                <td class="duration" data-value="6327097347">6s 327ms</td>
+                <td class="duration" data-value="1054516224">1s 054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStep.eu_acesso_a_aplicação_chargeback_através_da_url(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="62336371664">1m 2s 336ms</td>
+                <td class="duration" data-value="10389395277">10s 389ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStep.se_informa_o_usuário_e_senha(String,String)</td>
+                <td>6</td>
+                <td class="duration" data-value="49455575688">49s 455ms</td>
+                <td class="duration" data-value="8242595948">8s 242ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStep.visualiza_se_uma_mensagem_a_tela_principal_da_Aplicação(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="151185620">151ms</td>
+                <td class="duration" data-value="75592810">075ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>11</td>
+              <td>29</td>
+              <td class="duration">2m 52s 805ms</td>
+              <td class="duration">5s 958ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
