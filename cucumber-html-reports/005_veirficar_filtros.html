@@ -1,0 +1,5545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Tag: @005_veirficar_filtros</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>br.com.fiserv.chargeback.test.automacao</td>
+                          <td>1</td>
+                        <td>08 fev 2021, 14:16</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tag Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">@005_veirficar_filtros</td>
+                    <td  class="passed"    >34</td>
+          <td >0</td>
+          <td class="total">34</td>
+          <td      class="passed"    >102</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">102</td>
+          <td class="duration" data-value="1425276861000">23m 45s 276ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 242ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento"</span>
+  
+  <span class="lead-duration duration">4s 185ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 1</span>
+  
+  <span class="lead-duration duration">3s 132ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 030ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1558838749" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1558838749.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1558838749" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1558838749.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 254ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento"</span>
+  
+  <span class="lead-duration duration">4s 180ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">5s 139ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 038ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 273ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA"</span>
+  
+  <span class="lead-duration duration">6s 265ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 2</span>
+  
+  <span class="lead-duration duration">3s 268ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-9" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 044ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1060553750" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1060553750.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1060553750" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1060553750.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 308ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA"</span>
+  
+  <span class="lead-duration duration">6s 247ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">7s 448ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 062ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 270ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE"</span>
+  
+  <span class="lead-duration duration">8s 409ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 3</span>
+  
+  <span class="lead-duration duration">3s 378ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 037ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-772506829" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-772506829.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-772506829" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-772506829.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 303ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE"</span>
+  
+  <span class="lead-duration duration">8s 416ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">9s 319ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 031ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 252ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE"</span>
+  
+  <span class="lead-duration duration">10s 489ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 4</span>
+  
+  <span class="lead-duration duration">3s 755ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-21" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 042ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-365257480" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-365257480.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-365257480" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-365257480.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 234ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE"</span>
+  
+  <span class="lead-duration duration">10s 417ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">11s 418ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 037ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 239ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">12s 524ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 5</span>
+  
+  <span class="lead-duration duration">3s 625ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-27">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-27" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 033ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_576083504" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_576083504.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_576083504" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_576083504.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 308ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">12s 554ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">13s 593ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-30" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 035ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 302ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO"</span>
+  
+  <span class="lead-duration duration">14s 595ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 6</span>
+  
+  <span class="lead-duration duration">3s 743ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-33" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 024ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_918050380" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_918050380.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_918050380" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_918050380.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 222ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO"</span>
+  
+  <span class="lead-duration duration">14s 525ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">15s 350ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 025ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 212ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">16s 652ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 7</span>
+  
+  <span class="lead-duration duration">3s 860ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-39">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-39" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 039ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1348937963" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1348937963.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1348937963" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1348937963.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 241ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">16s 581ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">17s 484ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-42" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 031ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 288ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO"</span>
+  
+  <span class="lead-duration duration">18s 744ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 8</span>
+  
+  <span class="lead-duration duration">4s 014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-45" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 025ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1916336911" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1916336911.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1916336911" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1916336911.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 228ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO"</span>
+  
+  <span class="lead-duration duration">18s 624ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">19s 432ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-48" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 024ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-50">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 307ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO"</span>
+  
+  <span class="lead-duration duration">20s 786ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 9</span>
+  
+  <span class="lead-duration duration">4s 123ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-51">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-51" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 023ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1860721621" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1860721621.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1860721621" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1860721621.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-52">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-52" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-53">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-53" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 259ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO"</span>
+  
+  <span class="lead-duration duration">20s 694ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">21s 537ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-54" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 035ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-55">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-55" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-56">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-56" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 228ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO"</span>
+  
+  <span class="lead-duration duration">22s 846ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 10</span>
+  
+  <span class="lead-duration duration">4s 246ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-57">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-57" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 033ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1311625413" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1311625413.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1311625413" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1311625413.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-58">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 286ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO"</span>
+  
+  <span class="lead-duration duration">22s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">23s 510ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-60">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-60" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 049ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-62">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 230ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO"</span>
+  
+  <span class="lead-duration duration">24s 909ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 11</span>
+  
+  <span class="lead-duration duration">4s 399ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-63">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-63" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 032ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1471771280" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1471771280.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1471771280" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1471771280.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-64">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-64" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-65">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-65" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 248ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO"</span>
+  
+  <span class="lead-duration duration">24s 819ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">25s 806ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-66">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-66" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 024ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 232ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO"</span>
+  
+  <span class="lead-duration duration">26s 983ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 12</span>
+  
+  <span class="lead-duration duration">4s 515ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-69">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-69" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 038ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-387232693" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-387232693.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-387232693" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-387232693.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-70">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-70" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-71">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-71" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 214ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO"</span>
+  
+  <span class="lead-duration duration">26s 899ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">28s 053ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-72" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 026ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-73">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-74">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-74" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 280ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">29s 068ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 13</span>
+  
+  <span class="lead-duration duration">4s 667ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-75">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-75" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 030ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-2144725974" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-2144725974.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-2144725974" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-2144725974.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-76">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-76" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-77">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-77" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 231ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">28s 945ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">29s 609ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-78">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-78" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 029ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-79">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-79" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-80">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-80" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 226ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO"</span>
+  
+  <span class="lead-duration duration">31s 127ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 14</span>
+  
+  <span class="lead-duration duration">4s 760ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-81">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-81" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 044ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_2030598116" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_2030598116.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_2030598116" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_2030598116.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-82">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-82" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-83">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-83" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 222ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO"</span>
+  
+  <span class="lead-duration duration">31s 046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">31s 917ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-84">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-84" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 043ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-85">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-85" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-86">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-86" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 258ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE"</span>
+  
+  <span class="lead-duration duration">33s 197ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 15</span>
+  
+  <span class="lead-duration duration">4s 869ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-87">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-87" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 036ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_825735638" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_825735638.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_825735638" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_825735638.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-88">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-88" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-89">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-89" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 279ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE"</span>
+  
+  <span class="lead-duration duration">33s 065ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">33s 896ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-90">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-90" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 039ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-91">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-91" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-92">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-92" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 315ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE", "CPF/CNPJ"</span>
+  
+  <span class="lead-duration duration">35s 246ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 16</span>
+  
+  <span class="lead-duration duration">5s 038ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-93">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-93" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 045ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-339683871" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-339683871.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-339683871" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-339683871.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-94">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-94" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-95">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 256ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE", "CPF/CNPJ"</span>
+  
+  <span class="lead-duration duration">35s 111ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">36s 110ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-96">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-96" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 029ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-97">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-97" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-98">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-98" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 258ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE", "CPF/CNPJ", "SLIP DE CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">37s 359ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "true" , 17</span>
+  
+  <span class="lead-duration duration">5s 215ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-99">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-99" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 036ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1498523243" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1498523243.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1498523243" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1498523243.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-005_verificacao_filtros-feature.html">View Feature</a> <i>005 Verificar Filtros</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="005_veirficar_filtros.html">@005_veirficar_filtros</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-100">
+    
+<div class="brief passed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Verificar os Filtros na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-100" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-101">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-101" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 237ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao escolher a quantidade de filtros "Data de Processamento", "BANDEIRA", "REASON CODE", "MODALIDADE", "STATUS DO CHARGEBACK", "DATA DA SOLICITAÇÃO", "CHAVE DO CHARGEBACK", "CÓDIGO DO ESTABELECIMENTO", "AUTORIZAÇÃO", "DOCUMENTO RECEBIDO", "DATA DE ATUALIZAÇÃO", "AÇÃO", "MODO DE CAPTURA", "TRIAGEM DO DOCUMENTO", "TRANSAÇÕES COM PRIORIDADE", "CPF/CNPJ", "SLIP DE CHARGEBACK"</span>
+  
+  <span class="lead-duration duration">37s 210ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Então</span>
+  <span class="name">ao retornar na tela principal da aplicação visualiza - se  a quantidade de filtro na tela "false" , 0</span>
+  
+  <span class="lead-duration duration">38s 776ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-102">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-102" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 025ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
