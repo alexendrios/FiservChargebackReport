@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@001_login","@002_cadastrar_usuario","@003_editar_usuario","@004_Deletar_usuario","@005_veirficar_filtros"],
+        labels: ["@001_login","@002_cadastrar_usuario","@003_editar_usuario","@004_Deletar_usuario","@005_veirficar_filtros","@006_Pesquisar_dados","@smoker"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00, 100.00, 100.00, 100.00, 100.00]
+                data: [100.00, 100.00, 100.00, 100.00, 100.00, 89.29, 100.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 7.14, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 3.57, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>br.com.fiserv.chargeback.test.automacao</td>
                           <td>1</td>
-                        <td>12 fev 2021, 16:45</td>
+                        <td>19 fev 2021, 12:44</td>
           </tr>
         </tbody>
       </table>
@@ -203,7 +203,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
-        <td class="duration" data-value="16624660400">16s 624ms</td>
+        <td class="duration" data-value="16624951500">16s 624ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -218,7 +218,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">6</td>
-        <td class="duration" data-value="43060899600">43s 060ms</td>
+        <td class="duration" data-value="42869208800">42s 869ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -233,7 +233,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
-        <td class="duration" data-value="22626483600">22s 626ms</td>
+        <td class="duration" data-value="22661557800">22s 661ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -248,7 +248,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
-        <td class="duration" data-value="21571150900">21s 571ms</td>
+        <td class="duration" data-value="21684146100">21s 684ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -263,24 +263,54 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">102</td>
-        <td class="duration" data-value="1446399725600">24m 6s 399ms</td>
+        <td class="duration" data-value="1773635759400">29m 33s 635ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a></td>
+        
+        <td  class="passed"    >9</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td      class="passed"    >25</td>
+        <td >0</td>
+        <td     class="skipped"   >2</td>
+        <td     class="pending"   >1</td>
+        <td >0</td>
+        <td class="total">28</td>
+        <td class="duration" data-value="1369357334000">22m 49s 357ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="smoker.html">@smoker</a></td>
+        
+        <td  class="passed"    >8</td>
+        <td >0</td>
+        <td class="total">8</td>
+        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">24</td>
+        <td class="duration" data-value="1361063674800">22m 41s 063ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>5</td>
-            <td>40</td>
+      <td>7</td>
+            <td>57</td>
       <td>0</td>
-      <td>40</td>
-      <td>119</td>
+      <td>57</td>
+      <td>168</td>
       <td>0</td>
+      <td>2</td>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>119</td>
-      <td class="duration">25m 50s 282ms</td>
+      <td>171</td>
+      <td class="duration">1h 16m 47s 896ms</td>
       <td></td>
     </tr>
     <tr>
@@ -288,10 +318,10 @@ $(document).ready(function() {
             <td>100.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
+      <td>98.25%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>1.17%</td>
+      <td>0.58%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
