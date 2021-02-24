@@ -77,7 +77,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>br.com.fiserv.chargeback.test.automacao</td>
                           <td>1</td>
-                        <td>24 fev 2021, 06:03</td>
+                        <td>24 fev 2021, 16:23</td>
           </tr>
         </tbody>
       </table>
@@ -102,12 +102,13 @@ $(document).ready(function() {
                       
 <div class="element">
       <div class="indention">
-      <a href="classpath-features-002_cadastrar_usuario-feature.html">View Feature</a> <i>002 Cadastrar</i>
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="002_cadastrar_usuario.html">@002_cadastrar_usuario</a>
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
   </div>
 
 
@@ -115,7 +116,7 @@ $(document).ready(function() {
     
 <div class="brief failed">
   <span class="keyword indention">Esquema do Cenário</span>
-  <span class="name">Efetuar o Cadastro do Usu&aacute;rio na Aplica&ccedil;&atilde;o chargeback</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -149,7 +150,49 @@ $(document).ready(function() {
   <span class="keyword indention">Quando</span>
   <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
   
-  <span class="lead-duration duration">8s 230ms</span>
+  <span class="lead-duration duration">8s 221ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "DOCUMENTO RECEBIDO"</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "NO"</span>
+  
+  <span class="lead-duration duration">2m 11s 435ms</span>
 
   </div>
 
@@ -167,10 +210,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">E</span>
-  <span class="name">ao informar nome do usuário "TestRobot", Sobrenome "Automation", email "test.automation@test.com.br", login da rede "F3565" , perfil "Administrator"</span>
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
   
-  <span class="lead-duration duration">7s 261ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -182,59 +225,15 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ypi-c27="" class="table-add-button mat-stroked-button mat-button-base mat-primary" color="primary" mat-stroked-button="">...</button> is not clickable at point (570, 273). Other element would receive the click: <div _ngcontent-ypi-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgb(71, 71, 71); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: headless chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LFDCG2XQFV2', ip: '10.99.5.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at br.com.fiserv.chargeback.test.automacao.pages.OperacaoUsuarioPage.cadastrarUsuario(OperacaoUsuarioPage.java:143)
-	at br.com.fiserv.chargeback.test.automacao.steps.CadastroUsuarioStep.ao_informar_nome_do_usuário_Sobrenome_email_login_da_rede_perfil(CadastroUsuarioStep.java:27)
-	at ✽.ao informar nome do usuário "TestRobot", Sobrenome "Automation", email "test.automation@test.com.br", login da rede "F3565" , perfil "Administrator"(classpath:features/002_cadastrar_usuario.feature:11)
+        <pre>org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.verifica_se_a_quantidade_dos_registros_baixados_no_arquivo_excell_é_igual_a_quantidade_de_registros_na_tela(PesquisarDadosStep.java:38)
+	at ✽.verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"(classpath:features/006_pesquisar_dados.feature:31)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Então</span>
-  <span class="name">ao concluir o cadastor visualiza - se a seguinte mensagem  "User already registered with this login."</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
 
 
         
@@ -269,7 +268,7 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">1s 118ms</span>
+  <span class="lead-duration duration">1s 047ms</span>
 
           </div>
 
@@ -279,12 +278,12 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1759128355" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_297326731" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1759128355.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_297326731.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_-1759128355" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1759128355.png"></span>
+    <div id="embedding_embedding_297326731" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_297326731.png"></span>
     </div>
   </div>
         </div>
@@ -347,7 +346,7 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
   <span class="keyword indention">Quando</span>
   <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
   
-  <span class="lead-duration duration">8s 245ms</span>
+  <span class="lead-duration duration">8s 240ms</span>
 
   </div>
 
@@ -366,30 +365,9 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
         
 <div class="brief passed">
   <span class="keyword indention">E</span>
-  <span class="name">ao informar o nome do filtro desejado "DOCUMENTO RECEBIDO"</span>
+  <span class="name">ao informar o nome do filtro desejado "TRANSAÇÕES COM PRIORIDADE"</span>
   
-  <span class="lead-duration duration">001ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">E</span>
-  <span class="name">a opção para realizar a busca dos dados "NO"</span>
-  
-  <span class="lead-duration duration">2m 10s 794ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -407,10 +385,10 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Então</span>
-  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "All"</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1m 57s 827ms</span>
 
   </div>
 
@@ -422,15 +400,61 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           <a>Error message</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.verifica_se_a_quantidade_dos_registros_baixados_no_arquivo_excell_é_igual_a_quantidade_de_registros_na_tela(PesquisarDadosStep.java:38)
-	at ✽.verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"(classpath:features/006_pesquisar_dados.feature:31)
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h1 _ngcontent-usb-c16="" class="w-fit" id="fixed-filters--toggle">...</h1> is not clickable at point (628, 9). Other element would receive the click: <div _ngcontent-usb-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgb(71, 71, 71); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: headless chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bac4c23f3ecdf727ab2d9fa752d7468f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.FiltrosPage.ativarFiltro(FiltrosPage.java:81)
+	at br.com.fiserv.chargeback.test.automacao.pages.FiltrosPage.escolherFiltro(FiltrosPage.java:95)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.downloadReport(PesquisaDadosPage.java:66)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.searchSelect(PesquisaDadosPage.java:94)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.a_opção_para_realizar_a_busca_dos_dados(PesquisarDadosStep.java:33)
+	at ✽.a opção para realizar a busca dos dados "All"(classpath:features/006_pesquisar_dados.feature:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
 
 
         
@@ -465,7 +489,7 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">1s 059ms</span>
+  <span class="lead-duration duration">1s 097ms</span>
 
           </div>
 
@@ -475,12 +499,12 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_297326731" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_540931362" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_297326731.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_540931362.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_297326731" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_297326731.png"></span>
+    <div id="embedding_embedding_540931362" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_540931362.png"></span>
     </div>
   </div>
         </div>
@@ -543,7 +567,7 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
   <span class="keyword indention">Quando</span>
   <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
   
-  <span class="lead-duration duration">8s 245ms</span>
+  <span class="lead-duration duration">8s 217ms</span>
 
   </div>
 
@@ -564,28 +588,7 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
   <span class="keyword indention">E</span>
   <span class="name">ao informar o nome do filtro desejado "TRANSAÇÕES COM PRIORIDADE"</span>
   
-  <span class="lead-duration duration">002ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">E</span>
-  <span class="name">a opção para realizar a busca dos dados "No"</span>
-  
-  <span class="lead-duration duration">2m 10s 634ms</span>
+  <span class="lead-duration duration">004ms</span>
 
   </div>
 
@@ -603,10 +606,10 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Então</span>
-  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "Yes"</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">13s 258ms</span>
 
   </div>
 
@@ -618,15 +621,60 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
           <a>Error message</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.verifica_se_a_quantidade_dos_registros_baixados_no_arquivo_excell_é_igual_a_quantidade_de_registros_na_tela(PesquisarDadosStep.java:38)
-	at ✽.verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"(classpath:features/006_pesquisar_dados.feature:31)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='filters']/div/div/form/div/div/div[1]/div[1]/mat-form-field/div/div[1]/div"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 611bc4bc5b531078c7837efbd9fde451
+*** Element info: {Using=xpath, value=//*[@id='filters']/div/div/form/div/div/div[1]/div[1]/mat-form-field/div/div[1]/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.searchSelect(PesquisaDadosPage.java:89)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.a_opção_para_realizar_a_busca_dos_dados(PesquisarDadosStep.java:33)
+	at ✽.a opção para realizar a busca dos dados "Yes"(classpath:features/006_pesquisar_dados.feature:30)
 </pre>
       </div>
     </div>
   </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
 
 
         
@@ -661,7 +709,203 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">1s 026ms</span>
+  <span class="lead-duration duration">1s 054ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 305ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "TRANSAÇÕES COM PRIORIDADE"</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "No"</span>
+  
+  <span class="lead-duration duration">2m 10s 377ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Error message</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.verifica_se_a_quantidade_dos_registros_baixados_no_arquivo_excell_é_igual_a_quantidade_de_registros_na_tela(PesquisarDadosStep.java:38)
+	at ✽.verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"(classpath:features/006_pesquisar_dados.feature:31)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 230ms</span>
 
           </div>
 
@@ -677,6 +921,2205 @@ Session ID: 17ef5ff02fc5f7ebb7e03f18862796f6
     </div>
     <div id="embedding_embedding_1978484579" class="collapse collapsable-detail">
       <span class="embedding-content"><img src="embeddings/embedding_1978484579.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Error message</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3d4651ffa5e80c3583b75813a63aa0a3
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "002-MS, autor. online, PIN online"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-20" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 003ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">023ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Error message</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4968135ba85780610a1e9189739fb0e2
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "045-Recorrente"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 015ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-26">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 304ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "060-ICC, autorização online, PIN"</span>
+  
+  <span class="lead-duration duration">13s 253ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Error message</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='filters']/div/div/form/div/div/div[1]/div[1]/mat-form-field/div/div[1]/div"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f50217b98553d9fe19467fad3a33f6d2
+*** Element info: {Using=xpath, value=//*[@id='filters']/div/div/form/div/div/div[1]/div[1]/mat-form-field/div/div[1]/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.searchSelect(PesquisaDadosPage.java:89)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.a_opção_para_realizar_a_busca_dos_dados(PesquisarDadosStep.java:33)
+	at ✽.a opção para realizar a busca dos dados "060-ICC, autorização online, PIN"(classpath:features/006_pesquisar_dados.feature:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-28" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 039ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1884436852" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1884436852.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1884436852" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1884436852.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 282ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "MODO DE CAPTURA"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "998-N¿o classificado"</span>
+  
+  <span class="lead-duration duration">21s 422ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Error message</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-kgw-c17="" class="w-fit table-export-button mat-stroked-button mat-button-base mat-primary" color="primary" mat-stroked-button="">...</button> is not clickable at point (478, 450). Other element would receive the click: <div _ngcontent-kgw-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgb(71, 71, 71); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: headless chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a5298e885b0e341832f47243d96c696b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.downloadReport(PesquisaDadosPage.java:64)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.searchSelect(PesquisaDadosPage.java:94)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.a_opção_para_realizar_a_busca_dos_dados(PesquisarDadosStep.java:33)
+	at ✽.a opção para realizar a busca dos dados "998-N¿o classificado"(classpath:features/006_pesquisar_dados.feature:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-32" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 086ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1291621696" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1291621696.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1291621696" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1291621696.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-34">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Error message</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68e7ef4fbdac256979a38518867cc231
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "All"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">999ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-38">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Error message</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a42c0cc7730ddc788b151ef48343c4f
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "11-VCR Authorization"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-40" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">995ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-42">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">020ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Error message</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 955dc14901c993e66619b2ea1b64c17c
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "12-VCR Processing Error"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-44" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">996ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-46">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Error message</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dfeeb7562abd42fce4b40e74bd9aeefd
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "13-VCR Consumer Dispute"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-48" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 018ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-49">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-50">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">025ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Error message</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#userName"}
+  (Session info: headless chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 57297c2c11187522664ac50e90de645c
+*** Element info: {Using=id, value=userName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.LoginPage.login(LoginPage.java:38)
+	at br.com.fiserv.chargeback.test.automacao.steps.LoginStep.se_informa_o_usuário_e_senha(LoginStep.java:23)
+	at ✽.se informa o usuário "FBCTL1F" e senha "userLogin.txt"(classpath:features/006_pesquisar_dados.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "4804-Multiple Processing, Duplicate"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-52">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-52" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 014ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1032183595" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1032183595.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1032183595" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1032183595.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <a href="classpath-features-006_pesquisar_dados-feature.html">View Feature</a> <i>006 Pesquisar dados</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a>
+       <a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-53">
+    
+<div class="brief failed">
+  <span class="keyword indention">Esquema do Cenário</span>
+  <span class="name">Pesquisar dados de acordo com o filtro select informado na Aplica&ccedil;&atilde;o chargeback</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-54">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-54" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">se informa o usuário "FBCTL1F" e senha "userLogin.txt"</span>
+  
+  <span class="lead-duration duration">8s 300ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">ao informar o nome do filtro desejado "REASON CODE"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">E</span>
+  <span class="name">a opção para realizar a busca dos dados "4853-Cardholder Dispute - Defective/Not as described"</span>
+  
+  <span class="lead-duration duration">2s 083ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Error message</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h1 _ngcontent-fxs-c16="" class="w-fit" id="fixed-filters--toggle">...</h1> is not clickable at point (632, 167). Other element would receive the click: <div _ngcontent-fxs-c1="" class="overlay ng-tns-c1-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgb(71, 71, 71); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: headless chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LFDCG2XQFV2', ip: '10.99.5.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\fbctl1f\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31d35879c628087bf8789f5897596fce
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at br.com.fiserv.chargeback.test.automacao.pages.FiltrosPage.ativarFiltro(FiltrosPage.java:81)
+	at br.com.fiserv.chargeback.test.automacao.pages.FiltrosPage.escolherFiltro(FiltrosPage.java:95)
+	at br.com.fiserv.chargeback.test.automacao.pages.PesquisaDadosPage.searchSelect(PesquisaDadosPage.java:87)
+	at br.com.fiserv.chargeback.test.automacao.steps.PesquisarDadosStep.a_opção_para_realizar_a_busca_dos_dados(PesquisarDadosStep.java:33)
+	at ✽.a opção para realizar a busca dos dados "4853-Cardholder Dispute - Defective/Not as described"(classpath:features/006_pesquisar_dados.feature:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Então</span>
+  <span class="name">verifica - se a quantidade dos registros baixados no arquivo excell é igual a quantidade de registros na tela "true"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-56">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-56" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 100ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_895060254" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_895060254.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_895060254" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_895060254.png"></span>
     </div>
   </div>
         </div>
