@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@001_login","@002_cadastrar_usuario","@003_editar_usuario","@004_Deletar_usuario","@005_veirficar_filtros","@006_Pesquisar_dados","@smoker"],
+        labels: ["@001_login","@002_cadastrar_usuario","@003_editar_usuario","@004_Deletar_usuario","@005_veirficar_filtros","@006_Pesquisar_dados","@pesquisa_dados_imput_informacoes","@pesquisa_dados_select_informacoes"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00, 100.00, 100.00, 100.00, 100.00, 89.29, 100.00]
+                data: [100.00, 66.67, 100.00, 100.00, 100.00, 99.60, 100.00, 99.58]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 16.67, 0.00, 0.00, 0.00, 0.40, 0.00, 0.42]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 7.14, 0.00]
+                data: [0.00, 16.67, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 3.57, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>br.com.fiserv.chargeback.test.automacao</td>
                           <td>1</td>
-                        <td>19 fev 2021, 12:44</td>
+                        <td>24 fev 2021, 06:03</td>
           </tr>
         </tbody>
       </table>
@@ -203,23 +203,23 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
-        <td class="duration" data-value="16624951500">16s 624ms</td>
+        <td class="duration" data-value="16616928801">16s 616ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="002_cadastrar_usuario.html">@002_cadastrar_usuario</a></td>
         
-        <td  class="passed"    >2</td>
-        <td >0</td>
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
         <td class="total">2</td>
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
         <td class="total">6</td>
-        <td class="duration" data-value="42869208800">42s 869ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="37069263397">37s 069ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="003_editar_usuario.html">@003_editar_usuario</a></td>
@@ -233,7 +233,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
-        <td class="duration" data-value="22661557800">22s 661ms</td>
+        <td class="duration" data-value="22523665201">22s 523ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -248,7 +248,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
-        <td class="duration" data-value="21684146100">21s 684ms</td>
+        <td class="duration" data-value="21590709299">21s 590ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -263,26 +263,26 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">102</td>
-        <td class="duration" data-value="1773635759400">29m 33s 635ms</td>
+        <td class="duration" data-value="1975401633303">32m 55s 401ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="006_Pesquisar_dados.html">@006_Pesquisar_dados</a></td>
         
-        <td  class="passed"    >9</td>
+        <td  class="passed"    >125</td>
+        <td  class="failed"    >2</td>
+        <td class="total">127</td>
+        <td      class="passed"    >498</td>
+        <td      class="failed"    >2</td>
         <td >0</td>
-        <td class="total">9</td>
-        <td      class="passed"    >25</td>
         <td >0</td>
-        <td     class="skipped"   >2</td>
-        <td     class="pending"   >1</td>
         <td >0</td>
-        <td class="total">28</td>
-        <td class="duration" data-value="1369357334000">22m 49s 357ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">500</td>
+        <td class="duration" data-value="17437520482000">4h 50m 37s 520ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="smoker.html">@smoker</a></td>
+        <td class="tagname"><a href="pesquisa_dados_imput_informacoes.html">@pesquisa_dados_imput_informacoes</a></td>
         
         <td  class="passed"    >8</td>
         <td >0</td>
@@ -293,39 +293,54 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">24</td>
-        <td class="duration" data-value="1361063674800">22m 41s 063ms</td>
+        <td class="duration" data-value="1097085983500">18m 17s 085ms</td>
         <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="pesquisa_dados_select_informacoes.html">@pesquisa_dados_select_informacoes</a></td>
+        
+        <td  class="passed"    >117</td>
+        <td  class="failed"    >2</td>
+        <td class="total">119</td>
+        <td      class="passed"    >474</td>
+        <td      class="failed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">476</td>
+        <td class="duration" data-value="16340434498500">4h 32m 20s 434ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>7</td>
-            <td>57</td>
-      <td>0</td>
-      <td>57</td>
-      <td>168</td>
-      <td>0</td>
-      <td>2</td>
+      <td>8</td>
+            <td>163</td>
+      <td>131</td>
+      <td>294</td>
+      <td>1113</td>
+      <td>5</td>
       <td>1</td>
       <td>0</td>
-      <td>171</td>
-      <td class="duration">1h 16m 47s 896ms</td>
+      <td>0</td>
+      <td>1119</td>
+      <td class="duration">10h 15m 48s 243ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>55.44%</td>
+      <td>44.56%</td>
+      <td></td>
+      <td>99.46%</td>
+      <td>0.45%</td>
+      <td>0.09%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>98.25%</td>
-      <td>0.00%</td>
-      <td>1.17%</td>
-      <td>0.58%</td>
-      <td>0.00%</td>
       <td></td>
-      <td></td>
-      <td>0.00%</td>
+      <td>44.56%</td>
     </tr>
   </tfoot>
 </table>
